@@ -1,0 +1,27 @@
+
+###INDEX
+GET http://localhost:3000/places
+
+###CREATE
+
+POST http://localhost:3000/places
+Content-Type: application/json
+
+{
+"name": "Amber Inn",
+"address": "403 Birch St"
+}
+
+###SHOW
+GET http://localhost:3000/places/4
+
+###UPDATE
+PATCH http://localhost:3000/places/4
+Content-Type: application/json
+
+{
+  "address": "402 Birch St"
+}
+
+###DELETE
+DELETE http://localhost:3000/places/4
